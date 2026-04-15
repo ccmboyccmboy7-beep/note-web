@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile House - AutoDS Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body class="bg-gray-50">
+    <div id="screen_one" class="main h-dvh max-w-7xl w-full mx-auto p-3 capitalize overflow-hidden md:flex items-center justify-center">
+        <div class="bg-[#3D45AA] md:w-9/12 text-white flex flex-col md:flex-row justify-between rounded-3xl overflow-hidden">
+            
+            <div class="left-side py-20 md:w-5/12 flex flex-col items-center">
+                <div class="w-20 h-20 bg-[#ffffff28] rounded-full relative"> 
+                    <span class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                        <i class="fa-solid fa-house-laptop text-4xl"></i>
+                    </span>
+                </div>
+                <h1 class="sm:text-3xl text-2xl my-4">your note</h1>
+                <p class="text-center text-gray-200 hidden lg:block">kusooo dhawawow notekaga gaarka <br> fadlan formka buuxi si aan xogtada <br> aad amaan ugu dhigto</p>
+                <p class="text-center text-gray-200 lg:hidden">kuso dhawaw note kaga</p>
+            </div>
+
+            <div class="right-side md:w-7/12 bg-white text-slate-500 p-7">
+                <h2 class="text-black sm:text-2xl text-xl mb-8">Create acount</h2>
+
+                <form action="" id="sign_up_form">
+                    <div class="flex flex-col gap-2">
+                        <label class="text-slate-500 font-bold sm:text-[14px] text-[10px]" for="name_loging">FULL NAME</label>
+                        <div class="flex gap-3 items-center">
+                            <label for="name_loging"><i class="fa-regular fa-user text-gray-400"></i></label>
+                            <input type="text" required id="name_loging" placeholder="magacaga seddexan" class="text-gray-400 border-b focus:border-b-gray-800 transition-all duration-300 outline-none w-full">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-2 mt-7">
+                        <label class="text-slate-500 font-bold sm:text-[14px] text-[10px]" for="email_loging">EMAIL ADDRESS</label>
+                        <div class="flex gap-3 items-center">
+                            <label for="email_loging"><i class="fa-regular fa-envelope text-gray-400 mr-3"></i></label>
+                            <input type="email" required id="email_loging" placeholder="Email-kaga" class="text-gray-400 border-b focus:border-b-gray-800 transition-all duration-300 outline-none w-full">
+                        </div>
+                    </div>
+
+                    <button id="sign_up_form_btn" class="mt-10 cursor-pointer flex gap-4 items-center capitalize" type="submit">
+                        <p>next</p> 
+                        <span class="text-blue-500"><i class="fa-solid fa-arrow-right"></i></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- screen two -->
+<div id="screen_two" class="main h-dvh hidden">
+
+<h1 class="text-3xl">hooy0</h1>
+
+
+</div>
+
+
+
+</body>
+
+   
+
+</html>
