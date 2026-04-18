@@ -162,7 +162,7 @@
 
 
     </section>
-    <footer class="flex  bottom-0 mt-9 justify-between w-full px-8 items-center py-5">
+    <footer class="flex  bottom-0 mt-16 sm:mt-9 justify-between w-full px-8 items-center py-5">
 
 <i class="fa-solid cursor-pointer text-2xl fa-circle-question"></i>
 <button id="plus_note" class=" bg-[#5c339a] py-2 px-3 ">
@@ -176,8 +176,8 @@
 </div>
 
 <!-- screen of personal -->
-<div id="screen_three" class="main hidden bg-[#5c339a] text-white  h-dvh w-full  capitalize px-3 py-4 dark:bg-slate-950 dark:text-gray-100 sm:p-7">
-      <nav class=" ">
+<div id="screen_three" class="main relative hidden flex flex-col  bg-[#5c339a] text-white  h-dvh w-full  capitalize px-3 py-4 dark:bg-slate-950 dark:text-gray-100 sm:p-7">
+      <nav>
         <div class="flex justify-between items-center">
     
               
@@ -192,11 +192,13 @@
             </button>
         </div>
     </nav>
-<form action="" class="mt-5">
-    
-  <textarea name="" id="" placeholder="sogasho" class=" bg-transparent tex-xl min-w-full h-96 outline-none"></textarea>
+<form action="" class="flex-grow flex items-end flex-col ">
+    <button class="save_btn mt-5 mb-1 font-bold text-2xl cursor-pointer ">
+save
+</button>
+  <textarea name="" id="text_area_personal"  class="bg-transparent p-1  flex-grow w-full  tex-xl border  outline-none"></textarea>
 
-
+<span><span class="words_counter"></span> / 100</span>
 </form>
 </div>
 
