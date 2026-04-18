@@ -3,17 +3,20 @@
 const sign_up_form=document.querySelector("#sign_up_form");
 const screen_two=document.querySelector("#screen_two");
 const screen_one=document.querySelector("#screen_one");
-const theme_toggle=document.querySelector("#theme_toggle");
+const theme_toggle=document.querySelectorAll(".theme_toggle");
 const screens=document.querySelector(".screens")
 const salan_magaca=document.querySelector("#salan_magaca ")
  const next_arrow=document.querySelector("#next_arrow")
+const gb_space=document.querySelector("#gb_space");
+const screen_three=document.querySelector("#screen_three")
+const personal_btn=document.querySelector("#personal_btn")
 
 
 sign_up_form.addEventListener("submit", (e) => {
     e.preventDefault();
     
     // Qabo magaca qofka qoray
-    const magaca_la_qoray = document.querySelector("#name_loging").value;
+    
     
     // Animation-ka Arrow-ga
     next_arrow.classList.add("translate-x-full", "transition-transform");
@@ -23,24 +26,35 @@ sign_up_form.addEventListener("submit", (e) => {
         screen_two.classList.remove("hidden");
         
         // Halkaan ku dar magaca qofka
-        salan_magaca.textContent = magaca_la_qoray;
+       
     }, 500);
 });
 
-theme_toggle.addEventListener("click",(e)=>{
+theme_toggle.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        // 1. Beddel Dark Mode-ka
+        document.documentElement.classList.toggle("dark");
 
-document.documentElement.classList.toggle("dark");
-theme_toggle.classList.toggle("text-orange-200")
-if (document.documentElement.classList.contains("dark")) {
+        // 2. Qabo icon-ka ku dhex jira button-ka la riixay
+        const icon = btn.querySelector("i");
 
- 
-        theme_icon.classList.replace("fa-moon", "fa-sun");
-    } else {
-        theme_icon.classList.replace("fa-sun", "fa-moon");
-    }
+        // 3. Beddel icon-ka (Moon -> Sun)
+        if (document.documentElement.classList.contains("dark")) {
+            icon.classList.replace("fa-moon", "fa-sun");
+            icon.classList.add("text-orange-300"); // Midabka qorraxda
+        } else {
+            icon.classList.replace("fa-sun", "fa-moon");
+            icon.classList.remove("text-orange-300");
+        }
+    });
+});
 
+// peroal_btn addvent switch screen
+personal_btn.addEventListener("click",e=>{
+    setTimeout(() => {
+        screen_two.classList.add("hidden")
+screen_three.classList.remove("hidden")
+    }, 500);
 
 })
-
-
 

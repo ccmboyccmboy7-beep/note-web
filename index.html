@@ -48,8 +48,8 @@
 </head>
 <body class="bg-gray-50">
     
-    <div id="screen_one" class="main  h-dvh max-w-7xl w-full mx-auto p-1 capitalize overflow-hidden md:flex items-center justify-center">
-        <div class="bg-[#3D45AA] md:w-9/12 text-white flex flex-col md:flex-row justify-between rounded-3xl overflow-hidden">
+    <div id="screen_one" class="main  h-dvh  max-w-7xl w-full mx-auto p-1 capitalize overflow-hidden md:flex items-center justify-center">
+        <div class="bg-[#3D45AA]  md:w-9/12 text-white flex flex-col md:flex-row justify-between rounded-3xl overflow-hidden">
             
             <div class="left-side py-20 md:w-5/12 flex flex-col items-center">
                 <div class="w-20 h-20 bg-[#ffffff28] rounded-full relative"> 
@@ -70,7 +70,7 @@
                         <label class="text-slate-500 font-bold sm:text-[14px] text-[10px]" for="name_loging">your NAME</label>
                         <div class="flex gap-3 items-center">
                             <label for="name_loging"><i class="fa-regular fa-user text-gray-400"></i></label>
-                            <input type="text" required id="name_loging" placeholder="magacaga seddexan" class="text-gray-400 border-b focus:border-b-gray-800 outline-none w-full">
+                            <input type="text" required id="name_loging" placeholder="magacaga" class="text-gray-400 border-b focus:border-b-gray-800 outline-none w-full">
                         </div>
                     </div>
 
@@ -90,20 +90,20 @@
             </div>
         </div>
     </div>
-
-    <div id="screen_two" class="main hidden h-dvh w-full capitalize px-3 py-4 dark:bg-slate-950 dark:text-gray-100 sm:p-7">
+<!-- screen two  -->
+    <div id="screen_two" class="main hidden  h-dvh w-full relative capitalize px-3 py-4 dark:bg-slate-950 dark:text-gray-100 sm:p-7">
 
     <nav class="mb-8 ">
         <div class="flex justify-between items-center">
-            <div class="flex items-center gap-3">
+    
               
-                <div>
-                    <h2 class="font-[Montserrat] text-lg font-extrabold leading-tight">note app</h2>
-                    <p class="text-[10px] text-slate-500 dark:text-gray-400">hi <span id="salan_magaca" class="font-bold text-blue-500"></span> !</p>
-                </div>
-            </div>
+            
+                    <h2 class="font-[Montserrat] text-2xl font-extrabold leading-tight">note app</h2>
+                   
+                
+       
 
-            <button id="theme_toggle" class="p-2 rounded-full">
+            <button  class=" theme_toggle p-2 rounded-full">
                 <i id="theme_icon" class="scale-125 fa-solid fa-moon sm:text-2xl text-xl"></i>
             </button>
         </div>
@@ -125,9 +125,10 @@
 
 
     </header>
+
     <section class="grid mt-14 gap-8  px-5 grid-cols-2">
         <!-- personal button -->
-<div class="flex hover:bg-[#5c339a] hover:text-white rounded-tr-3xl transition-colors duration-300 cursor-pointer p-16 bg-[#3c167b68]  justify-center ">
+<div id="personal_btn" class="flex hover:bg-[#5c339a] hover:text-white rounded-tr-3xl transition-colors duration-300 cursor-pointer p-16 bg-[#3c167b68]  justify-center ">
     <button>
 <i class="fa-solid  text-4xl  md:text-5xl fa-book"></i>
 <h3 class="capitalize">personal</h3>
@@ -143,7 +144,7 @@
 
 </div>
 <!-- work button -->
-<div class="flex hover:bg-[#5c339a] hover:text-white rounded-tr-3xl transition-colors duration-300 cursor-pointer p-16 bg-[#3c167b68]  justify-center ">
+<div class="flex hover:bg-[#5c339a]  hover:text-white rounded-tr-3xl transition-colors duration-300 cursor-pointer p-16 bg-[#3c167b68]  justify-center ">
     <button>
 <i class="fa-solid  text-4xl  md:text-5xl fa-solid fa-laptop-code"></i>
 <h3 class="capitalize">work</h3>
@@ -159,7 +160,44 @@
 
 </div>
 
+
     </section>
+    <footer class="flex  bottom-0 mt-9 justify-between w-full px-8 items-center py-5">
+
+<i class="fa-solid cursor-pointer text-2xl fa-circle-question"></i>
+<button id="plus_note" class=" bg-[#5c339a] py-2 px-3 ">
+    <i class="fa-solid cursor-pointer text-white text-2xl fa-plus"></i>
+</button>
+<i class="fa-solid cursor-pointer text-2xl fa-gear"></i>
+
+</footer>
+
+
+</div>
+
+<!-- screen of personal -->
+<div id="screen_three" class="main hidden bg-[#5c339a] text-white  h-dvh w-full  capitalize px-3 py-4 dark:bg-slate-950 dark:text-gray-100 sm:p-7">
+      <nav class=" ">
+        <div class="flex justify-between items-center">
+    
+              
+            
+                    <h2 class="font-[Montserrat] text-2xl font-extrabold leading-tight">note app</h2>
+                   
+                
+       
+
+            <button class=" theme_toggle p-2 rounded-full">
+                <i id="theme_icon" class="scale-125 fa-solid fa-moon sm:text-2xl text-xl"></i>
+            </button>
+        </div>
+    </nav>
+<form action="" class="mt-5">
+    
+  <textarea name="" id="" placeholder="sogasho" class=" bg-transparent tex-xl min-w-full h-96 outline-none"></textarea>
+
+
+</form>
 </div>
 
 
